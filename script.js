@@ -16,5 +16,6 @@ async function copyKakaoId(){
   setTimeout(()=>toast.classList.remove('show'),1700);
 }
 
-document.getElementById('kakaoCopy')?.addEventListener('click', copyKakaoId);
-document.getElementById('kakaoCopyMobile')?.addEventListener('click', copyKakaoId);
+document.getElementById('kakaoCopy')?.addEventListener('click',copyKakaoId);
+document.getElementById('kakaoCopy2')?.addEventListener('click',copyKakaoId);
+document.getElementById('year').textContent=new Date().getFullYear();
