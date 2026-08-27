@@ -8,7 +8,6 @@
   <meta name="keywords" content="한게임머니상, 시드머니상, 한게임머니, 한게임머니 상담">
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
   <link rel="canonical" href="https://xmaos001-droid.github.io/hangame-money/">
-  <link rel="stylesheet" href="./styles.css">
   <meta name="theme-color" content="#020914">
 
   <meta property="og:type" content="website">
@@ -17,6 +16,115 @@
   <meta property="og:description" content="한게임머니상·시드머니상 관련 문의를 카카오톡 ID, 텔레그램, 전화로 빠르게 확인하세요.">
   <meta property="og:url" content="https://xmaos001-droid.github.io/hangame-money/">
   <meta property="og:site_name" content="시드머니상">
+
+  <style>
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:#020914;color:#fff;font-family:Arial,"Noto Sans KR",sans-serif}
+    body{min-height:100vh;overflow-x:hidden}
+    .seo-copy{
+      position:absolute!important;
+      width:1px!important;height:1px!important;
+      padding:0!important;margin:-1px!important;
+      overflow:hidden!important;
+      clip:rect(0,0,0,0)!important;
+      white-space:nowrap!important;
+      border:0!important
+    }
+    .page{width:100%;min-height:100vh;background:#020914}
+    .mockup{
+      position:relative;
+      width:100%;
+      max-width:1920px;
+      margin:0 auto;
+      background:#020914;
+      overflow:hidden
+    }
+    .mockup-image{
+      display:block;
+      width:100%;
+      height:auto;
+      margin:0;
+      padding:0;
+      border:0
+    }
+    .hotspot{
+      position:absolute;
+      display:block;
+      border:0;
+      background:transparent;
+      cursor:pointer;
+      z-index:10;
+      padding:0
+    }
+    .service{left:40.3%;top:2%;width:7.8%;height:7.2%}
+    .guide{left:49%;top:2%;width:7.8%;height:7.2%}
+    .faq{left:57.2%;top:2%;width:8.7%;height:7.2%}
+    .phone-top{left:67.5%;top:.8%;width:16.8%;height:7.4%}
+    .inquiry-top{left:85.2%;top:.8%;width:9.5%;height:7.4%}
+    .kakao{left:4.6%;top:59.6%;width:15.1%;height:9.5%}
+    .telegram{left:20.6%;top:59.6%;width:14.4%;height:9.5%}
+    .phone-main{left:35.8%;top:59.6%;width:15.2%;height:9.5%}
+    .hotspot:focus-visible{outline:2px solid #50e9ff;outline-offset:-3px;border-radius:12px}
+
+    .mobile{
+      display:none;
+      min-height:100vh;
+      padding:72px 20px;
+      background:
+        radial-gradient(circle at 80% 16%,rgba(19,116,255,.28),transparent 34%),
+        linear-gradient(145deg,#020914,#071b31)
+    }
+    .mobile .brand{
+      display:inline-block;
+      padding:10px 15px;
+      border-radius:12px;
+      background:linear-gradient(135deg,#65dff5,#647bff);
+      color:#06111f;
+      font-weight:900
+    }
+    .mobile h1{
+      font-size:46px;
+      line-height:1.04;
+      letter-spacing:-2.5px;
+      margin:28px 0 16px
+    }
+    .mobile .sub{color:#50e4ce;font-weight:800;margin-bottom:28px}
+    .m-btn{
+      width:100%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      margin:10px 0;
+      padding:17px 18px;
+      border-radius:15px;
+      border:0;
+      font-weight:900;
+      text-decoration:none
+    }
+    .m-btn strong{font-size:13px}
+    .m-kakao{background:#fee500;color:#111}
+    .m-telegram{background:#229ed9;color:#fff}
+    .m-phone{background:#fff;color:#07111f}
+    .toast{
+      position:fixed;
+      left:50%;bottom:24px;
+      transform:translate(-50%,18px);
+      opacity:0;
+      pointer-events:none;
+      padding:12px 18px;
+      border-radius:12px;
+      background:#fff;color:#07111f;
+      font-weight:800;
+      box-shadow:0 14px 34px rgba(0,0,0,.3);
+      transition:.2s;
+      z-index:99
+    }
+    .toast.show{opacity:1;transform:translate(-50%,0)}
+    @media(max-width:800px){
+      .mockup{display:none}
+      .mobile{display:block}
+    }
+  </style>
 
   <script type="application/ld+json">
   {
@@ -45,8 +153,7 @@
   </script>
 </head>
 <body>
-  <!-- 검색엔진용 실제 텍스트 -->
-  <div class="seo-copy">
+  <div class="seo-copy" aria-hidden="true">
     <h1>한게임머니상 빠르고 편리한 상담</h1>
     <p>한게임머니상 및 시드머니상 관련 문의를 24시간 365일 연중무휴로 안내합니다.</p>
     <p>카카오톡 ID tlem7, 텔레그램 ssddm1, 전화 010-7613-4430으로 문의할 수 있습니다.</p>
@@ -56,64 +163,48 @@
     <section class="mockup" aria-label="한게임머니상 상담 안내">
       <img src="./hero-reference.webp" class="mockup-image" alt="한게임머니상 24시간 상담 안내">
 
-      <!-- 상단 메뉴 클릭 영역 -->
-      <a class="hotspot service" href="#service" aria-label="서비스 안내"></a>
-      <a class="hotspot guide" href="#guide" aria-label="이용 안내"></a>
-      <a class="hotspot faq" href="#faq" aria-label="자주 묻는 질문"></a>
+      <a class="hotspot service" href="#" aria-label="서비스 안내"></a>
+      <a class="hotspot guide" href="#" aria-label="이용 안내"></a>
+      <a class="hotspot faq" href="#" aria-label="자주 묻는 질문"></a>
       <a class="hotspot phone-top" href="tel:01076134430" aria-label="전화 문의 010-7613-4430"></a>
-      <a class="hotspot inquiry-top" href="#contact" aria-label="문의하기"></a>
+      <button class="hotspot inquiry-top" id="kakaoTop" type="button" aria-label="문의하기"></button>
 
-      <!-- 메인 버튼 클릭 영역 -->
       <button class="hotspot kakao" id="kakaoCopy" type="button" aria-label="카카오톡 ID tlem7 복사"></button>
       <a class="hotspot telegram" href="https://t.me/ssddm1" target="_blank" rel="noopener" aria-label="텔레그램 ssddm1"></a>
       <a class="hotspot phone-main" href="tel:01076134430" aria-label="전화 문의 010-7613-4430"></a>
     </section>
 
-    <!-- 모바일에서는 실제 HTML 버튼이 보이도록 별도 구성 -->
-    <section class="mobile-panel" id="contact">
-      <div class="mobile-brand">시드머니상</div>
-      <h2>한게임머니상<br>빠르고 편리한 상담</h2>
-      <p>24시간 · 365일 연중무휴 상담</p>
-
-      <button type="button" id="kakaoCopyMobile" class="m-btn kakao-btn">
-        카카오톡 문의 <strong>ID : tlem7</strong>
-      </button>
-      <a class="m-btn telegram-btn" href="https://t.me/ssddm1" target="_blank" rel="noopener">
-        텔레그램 문의 <strong>ID : ssddm1</strong>
-      </a>
-      <a class="m-btn phone-btn" href="tel:01076134430">
-        전화 문의 <strong>010-7613-4430</strong>
-      </a>
-    </section>
-
-    <section class="content" id="service">
-      <h2>한게임머니상 상담 안내</h2>
-      <p>한게임머니상 및 시드머니상 관련 문의를 빠르게 확인할 수 있습니다.</p>
-    </section>
-
-    <section class="content" id="guide">
-      <h2>이용 안내</h2>
-      <p>원하는 문의 채널을 선택한 뒤 필요한 내용을 전달해주세요.</p>
-    </section>
-
-    <section class="content" id="faq">
-      <h2>자주 묻는 질문</h2>
-      <details>
-        <summary>카카오톡 문의는 어떻게 하나요?</summary>
-        <p>카카오톡 문의 버튼을 누르면 ID tlem7이 복사됩니다.</p>
-      </details>
-      <details>
-        <summary>텔레그램 문의는 바로 연결되나요?</summary>
-        <p>텔레그램 ID ssddm1로 바로 연결됩니다.</p>
-      </details>
-      <details>
-        <summary>전화번호는 무엇인가요?</summary>
-        <p>010-7613-4430 입니다.</p>
-      </details>
+    <section class="mobile">
+      <span class="brand">시드머니상</span>
+      <h1>한게임머니상<br>빠르고 편리한 상담</h1>
+      <p class="sub">24시간 · 365일 연중무휴 상담</p>
+      <button class="m-btn m-kakao" id="kakaoMobile" type="button">카카오톡 문의 <strong>ID : tlem7</strong></button>
+      <a class="m-btn m-telegram" href="https://t.me/ssddm1" target="_blank" rel="noopener">텔레그램 문의 <strong>ID : ssddm1</strong></a>
+      <a class="m-btn m-phone" href="tel:01076134430">전화 문의 <strong>010-7613-4430</strong></a>
     </section>
   </main>
 
   <div class="toast" id="toast">카카오톡 ID tlem7이 복사되었습니다.</div>
-  <script src="./script.js"></script>
+
+  <script>
+    const toast=document.getElementById('toast');
+    async function copyKakao(){
+      try{
+        await navigator.clipboard.writeText('tlem7');
+      }catch(e){
+        const ta=document.createElement('textarea');
+        ta.value='tlem7';
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        ta.remove();
+      }
+      toast.classList.add('show');
+      setTimeout(()=>toast.classList.remove('show'),1700);
+    }
+    document.getElementById('kakaoCopy')?.addEventListener('click',copyKakao);
+    document.getElementById('kakaoTop')?.addEventListener('click',copyKakao);
+    document.getElementById('kakaoMobile')?.addEventListener('click',copyKakao);
+  </script>
 </body>
 </html>
