@@ -1,19 +1,19 @@
-한게임머니상 / 시드머니상 리디자인 버전
+시드머니상 / 한게임머니상 - 초안 이미지 기준 재제작
 
-GitHub Pages:
-https://xmaos001-droid.github.io/hangame-money/
+이번 버전은 사용자가 승인한 초안 이미지 전체를 그대로 메인 비주얼로 사용합니다.
+따라서 기존처럼 오른쪽 그림이 따로 잘리거나 테두리가 생기지 않습니다.
 
-적용 연락처
-- 카카오톡 ID: tlem7
+연락처
+- 카카오톡 ID: tlem7 (버튼 클릭 시 복사)
 - 텔레그램: ssddm1
 - 전화: 010-7613-4430
 
-GitHub에서 기존 파일을 아래 파일로 교체하세요.
-index.html
-styles.css
-script.js
-robots.txt
-sitemap.xml
-hero-visual.webp
+GitHub에 올릴 파일
+- index.html
+- styles.css
+- script.js
+- robots.txt
+- sitemap.xml
+- hero-reference.webp
 
-카카오톡은 오픈채팅 링크가 아니라 일반 ID이므로 버튼을 누르면 ID tlem7이 복사되도록 구성되어 있습니다.
+기존 hero-visual.webp / hero-visual.png 파일은 더 이상 사용하지 않습니다.
